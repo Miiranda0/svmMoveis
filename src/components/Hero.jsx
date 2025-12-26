@@ -23,7 +23,7 @@ export default function Hero() {
           </div>
 
           <div className="flex gap-4 mt-6">
-  
+
 </div>
 
 
