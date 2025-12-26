@@ -50,5 +50,28 @@ body {
   text-align: center;
 }
 .hero-stats strong { font-size: 20px; }
+/* Ajuste para telas menores (celulares) */
+@media (max-width: 600px) {
+  .hero-stats {
+    /* Muda de 4 colunas para 2 colunas no celular */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px 10px; /* Aumenta o espaço vertical entre as linhas */
+    padding: 20px 10px;
+  }
 
+  .hero-stats div {
+    /* Garante que o texto e o número fiquem um sob o outro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-stats strong {
+    font-size: 18px; /* Reduz um pouco o número para caber melhor */
+  }
+
+  .hero-stats span {
+    font-size: 12px; /* Reduz um pouco a legenda */
+  }
+}
 @media (max-width: 900px) { .hero-content { flex-direction: column; } }
